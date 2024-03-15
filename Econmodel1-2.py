@@ -15,6 +15,13 @@ class Point:
         """
         return f"({self.x}, {self.y})"
 
+    def __repr__(self):
+        """
+        This is when the point is in a list or other container
+        :return:
+        """
+
+        return self.__str__()
 a = Point(2,3)
 b = Point(7,9)
 print(f"a=({a.x}, {a.y})")
@@ -36,5 +43,7 @@ for point in points:
     print(f"p({point.x}, {point.y})")
 
 #try to print the first point
-print("printing a point value"points[0])
+print("printing a point value", points[0])
 print(points)
+a = point(3,4)
+print(f"distance origin a= {a.distance_origin}")
