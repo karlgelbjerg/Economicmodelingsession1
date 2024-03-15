@@ -1,9 +1,19 @@
 import random
 class Point:
     def __init__(self, x, y):
+        """
+        This will be called when instantiating an object
+        :param x: the value of x
+        :param y: the value of y
+        """
         self.x = x
         self.y = y
-
+    def __str__(self):
+        """
+        This will return the string value used in printing the point
+        :return:
+        """
+        return f"({self.x}, {self.y})"
 
 a = Point(2,3)
 b = Point(7,9)
@@ -26,4 +36,5 @@ for point in points:
     print(f"p({point.x}, {point.y})")
 
 #try to print the first point
-print(points[0])
+print("printing a point value"points[0])
+print(points)
